@@ -8,7 +8,8 @@ public class Car
 
     public Car()
 	{
-	}
+        CarLot.numberOfCars++;
+    }
 
     public Car(string make, string model, int year, string engineNoise, string honkNoise, bool isDrivable)
     {
@@ -20,6 +21,8 @@ public class Car
         HonkNoise = honkNoise;  
 
         IsDrivable = isDrivable;    
+
+        CarLot.numberOfCars++;
     }
 
     public string Make { get; set;  }
